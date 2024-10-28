@@ -73,3 +73,18 @@ button {
         background-color: #f9f9f9;
     }
 }
+@font-face {
+    font-family: George;
+    src: url("./fonts/GeorgeBold.otf");
+  }
+  .login-rounded {
+    border-radius: 0.5rem;
+  }
+  
+  .login-gradient {
+    background: linear-gradient(154deg, rgba(81, 81, 81, 0.24) 2.62%, rgba(255, 255, 255, 0) 124.35%);
+  }
+  
+  .login-shadow {
+    box-shadow: 14px 16px 21px 0 rgba(0, 0, 0, 0.25);
+  }
