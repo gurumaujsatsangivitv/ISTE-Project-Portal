@@ -46,8 +46,6 @@ export function BentoGridDemo() {
           ))}
         </nav>
         <div className="relative">
-        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black h-5 w-5"  />
-
         <input
             type="text"
             placeholder="Search"
@@ -55,6 +53,7 @@ export function BentoGridDemo() {
             onChange={(e) => setSearchQuery(e.target.value)}
             className="pl-10 text-black pr-4 py-2 w-full md:w-64 rounded-lg border border-transparent focus:border-b-2 and focus:border-black-500 placeholder-black bg-transparent"
           />
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black h-5 w-5"  />
         </div>
       </div>
       <BentoGrid>
