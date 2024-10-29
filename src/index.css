@@ -23,8 +23,7 @@ a {
 
     a:hover {
         color: black;
-        background-color: rgba(39, 165, 239, 0.68);
-        text-decoration: inherit;
+        text-decoration: underline;
 
     }
     a:active{
@@ -58,10 +57,7 @@ button {
     transition: border-color 0.25s;
 }
 
-    button:hover {
-        border-color: #646cff;
-    }
-
+    
     button:focus,
     button:focus-visible {
         outline: 4px auto -webkit-focus-ring-color;
@@ -73,9 +69,7 @@ button {
         background-color: #ffffff;
     }
 
-    a:hover {
-        color: #747bff;
-    }
+    
 
     button {
         background-color: #f9f9f9;
