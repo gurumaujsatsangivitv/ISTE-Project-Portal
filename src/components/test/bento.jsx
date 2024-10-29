@@ -127,6 +127,7 @@ export function BentoGridDemo() {
           />
         ))}
       </BentoGrid>
+      
       <div className="text-center text-black text-xl mt-2">
         <div className="flex items-center justify-center py-4">
           <IconCircleFilled className="mr-2" /> You have reached the end <IconCircleFilled className="ml-2" />
