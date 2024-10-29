@@ -5,10 +5,14 @@ import {
   IconBoxAlignRightFilled,
   IconBoxAlignTopLeft,
   IconClipboardCopy,
-  IconFileBroken,
+  IconBoltFilled,
+  IconCircleFilled,
+  IconSparkles,
   IconSignature,
   IconTableColumn,
+  IconLayoutGridFilled,
   IconWorldWww,
+ 
 } from "@tabler/icons-react";
 import { Search } from "lucide-react";
 
@@ -101,11 +105,34 @@ export function BentoGridDemo() {
                 ? "md:col-span-1 md:row-span-2 bg-white"
                 : i === 17
                 ? "md:col-span-1 md:row-span-1 bg-white"
+                : i === 18
+                ? "md:col-span-1 md:row-span-1 bg-white"
+                : i === 19
+                ? "md:col-span-1 md:row-span-1 bg-white"
+                : i === 20
+                ? "md:col-span-2 md:row-span-2 bg-white"
+                : i === 21
+                ? "md:col-span-2 md:row-span-1 bg-white"
+                : i === 22
+                ? "md:col-span-1 md:row-span-2 bg-white"
+                : i === 23
+                ? "md:col-span-2 md:row-span-1 bg-white"
+                : i === 24
+                ? "md:col-span-2 md:row-span-2 bg-white"
+                : i === 25
+                ? "md:col-span-1 md:row-span-1 bg-white"
+
                 : ""
             }`}
           />
         ))}
       </BentoGrid>
+      <div className="text-center text-black text-xl mt-2">
+        <div className="flex items-center justify-center py-4">
+          <IconCircleFilled className="mr-2" /> You have reached the end <IconCircleFilled className="ml-2" />
+        </div>
+      </div>
+
     </div>
   );
 }
@@ -116,75 +143,39 @@ const Skeleton = ({ color }) => (
 
 const items = [
   {
-    title: "The Digital Revolution",
+    title: "Project Name",
     header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
     icon: <IconWorldWww className="h-5 w-5 text-white" />,
     tags: ["Web"],
   },
   {
-    title: "The Digital Revolution",
+    title: "Project Name",
     header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
-    icon: <IconWorldWww className="h-5 w-5 text-white" />,
+    icon: <IconLayoutGridFilled className="h-5 w-5 text-white" />,
     tags: ["App"],
   },
   {
     title: "The Digital Revolution",
     header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
-    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+    icon: <IconBoltFilled className="h-5 w-5 text-white" />,
     tags: ["Electrical"],
   },
   {
     title: "The Digital Revolution",
     header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
-    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+    icon: <IconLayoutGridFilled className="h-5 w-5 text-white" />,
     tags: ["App"],
   },
   {
     title: "The Digital Revolution",
     header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
-    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+    icon: <IconBoltFilled className="h-5 w-5 text-white" />,
     tags: ["Electrical"],
   },
   {
     title: "The Digital Revolution",
     header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
-    icon: <IconFileBroken className="h-5 w-5 text-white" />,
-    tags: ["Electrical"],
-  },
-  {
-    title: "The Digital Revolution",
-    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
-    icon: <IconWorldWww className="h-5 w-5 text-white" />,
-    tags: ["Web"],
-  },
-  {
-    title: "The Digital Revolution",
-    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
-    icon: <IconWorldWww className="h-5 w-5 text-white" />,
-    tags: ["Web"],
-  },
-  {
-    title: "The Digital Revolution",
-    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
-    icon: <IconFileBroken className="h-5 w-5 text-white" />,
-    tags: ["App"],
-  },
-  {
-    title: "The Digital Revolution",
-    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
-    icon: <IconFileBroken className="h-5 w-5 text-white" />,
-    tags: ["App"],
-  },
-  {
-    title: "The Digital Revolution",
-    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
-    icon: <IconFileBroken className="h-5 w-5 text-white" />,
-    tags: ["Electrical"],
-  },
-  {
-    title: "The Digital Revolution",
-    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
-    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+    icon: <IconBoltFilled className="h-5 w-5 text-white" />,
     tags: ["Electrical"],
   },
   {
@@ -202,28 +193,113 @@ const items = [
   {
     title: "The Digital Revolution",
     header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
-    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+    icon: <IconLayoutGridFilled className="h-5 w-5 text-white" />,
     tags: ["App"],
   },
   {
     title: "The Digital Revolution",
     header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
-    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+    icon: <IconLayoutGridFilled className="h-5 w-5 text-white" />,
     tags: ["App"],
   },
   {
     title: "The Digital Revolution",
     header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
-    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+    icon: <IconBoltFilled className="h-5 w-5 text-white" />,
+    tags: ["Electrical"],
+  },
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconBoltFilled className="h-5 w-5 text-white" />,
+    tags: ["Electrical"],
+  },
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconWorldWww className="h-5 w-5 text-white" />,
+    tags: ["Web"],
+  },
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconWorldWww className="h-5 w-5 text-white" />,
+    tags: ["Web"],
+  },
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconLayoutGridFilled className="h-5 w-5 text-white" />,
+    tags: ["App"],
+  },
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconLayoutGridFilled className="h-5 w-5 text-white" />,
+    tags: ["App"],
+  },
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconBoltFilled className="h-5 w-5 text-white" />,
     tags: ["Electrical"],
   },
   {
     title: "RoomEase",
     header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
-    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+    icon: <IconBoltFilled className="h-5 w-5 text-white" />,
     tags: ["Electrical"],
   },
-  // ... rest of the items array remains the same
+  {
+    title: "RoomEase",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconBoltFilled className="h-5 w-5 text-white" />,
+    tags: ["Electrical"],
+  },
+  {
+    title: "RoomEase",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconBoltFilled className="h-5 w-5 text-white" />,
+    tags: ["Electrical"],
+  },
+  {
+    title: "RoomEase",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconBoltFilled className="h-5 w-5 text-white" />,
+    tags: ["Electrical"],
+  },
+  {
+    title: "RoomEase",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconBoltFilled className="h-5 w-5 text-white" />,
+    tags: ["Electrical"],
+  },
+  {
+    title: "RoomEase",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconBoltFilled className="h-5 w-5 text-white" />,
+    tags: ["Electrical"],
+  },
+  {
+    title: "RoomEase",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconBoltFilled className="h-5 w-5 text-white" />,
+    tags: ["Electrical"],
+  },
+  {
+    title: "RoomEase",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconBoltFilled className="h-5 w-5 text-white" />,
+    tags: ["Electrical"],
+  },
+  {
+    title: "RoomEase",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconBoltFilled className="h-5 w-5 text-white" />,
+    tags: ["Electrical"],
+  },
+
+
 ];
 
 export default BentoGridDemo;
