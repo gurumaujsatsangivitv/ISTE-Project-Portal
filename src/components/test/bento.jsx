@@ -30,8 +30,7 @@ export function BentoGridDemo() {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:justify-between items-center mb-8">
-         <nav className="flex items-center space-x-8">
+<div className="sticky top-0 z-10 bg-white flex flex-col space-y-4 md:space-y-0 md:flex-row md:justify-between items-center mb-8 py-4">         <nav className="flex items-center space-x-8">
           {filters.map((filter) => (
             <a
               key={filter}
