@@ -8,6 +8,7 @@ import {
   IconFileBroken,
   IconSignature,
   IconTableColumn,
+  IconWorldWww,
 } from "@tabler/icons-react";
 
 export function BentoGridDemo() {
@@ -20,59 +21,153 @@ export function BentoGridDemo() {
           description={item.description}
           header={item.header}
           icon={item.icon}
-          className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+          className={
+            i === 0
+              ? "md:col-span-2 md:row-span-2 bg-white" // RoomEase box
+              : i === 1
+              ? "md:col-span-2 bg-white" // Digital Revolution box
+              : i === 2
+              ? "md:col-span-1 md:row-span-1 bg-white" // Box 1
+              : i === 3
+              ? "md:col-span-1 md:row-span-1 bg-white" // Box 2
+              : i === 4
+              ? "md:col-span-1 md:row-span-2 bg-white"
+              : i === 5
+              ? "md:col-span-1 md:row-span-1 bg-white"
+              : i === 6
+              ? "md:col-span-2 md:row-span-2 bg-white"
+              : i === 7
+              ? "md:col-span-1 md:row-span-1 bg-white"  
+              : i === 8
+              ? "md:col-span-2 md:row-span-2 bg-white"
+              : i === 9
+              ? "md:col-span-2 md:row-span-1 bg-white"
+              : i === 10
+              ? "md:col-span-2 md:row-span-1 bg-white" 
+              : i === 11
+              ? "md:col-span-2 md:row-span-1 bg-white"
+              : i === 12
+              ? "md:col-span-2 md:row-span-2 bg-white" 
+              : i === 13
+              ? "md:col-span-2 md:row-span-1 bg-white"
+              : i === 14
+              ? "md:col-span-2 md:row-span-2 bg-white"
+              : i === 15
+              ? "md:col-span-1 md:row-span-1 bg-white" 
+              : i === 16
+              ? "md:col-span-1 md:row-span-2 bg-white"
+              : i === 17
+              ? "md:col-span-1 md:row-span-1 bg-white"   // Box 2 // Box 2
+              :""
+          }
         />
       ))}
     </BentoGrid>
   );
 }
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
+
+const Skeleton = ({ color }) => (
+  <div className={`flex flex-1 w-full h-full min-h-[6rem] rounded-xl ${color}`} />
 );
+
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconWorldWww className="h-5 w-5 text-white" />,
   },
   {
     title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconWorldWww className="h-5 w-5 text-white" />,
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
   },
   {
-    title: "The Power of Communication",
-    description:
-      "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
   },
   {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
-    header: <Skeleton />,
-    icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
   },
   {
-    title: "The Joy of Creation",
-    description: "Experience the thrill of bringing ideas to life.",
-    header: <Skeleton />,
-    icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
   },
   {
-    title: "The Spirit of Adventure",
-    description: "Embark on exciting journeys and thrilling discoveries.",
-    header: <Skeleton />,
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
   },
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+  },
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+  },
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+  },
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+  },
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+  },
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+  },
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+  },
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+  },
+  
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+  },
+  
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+  },
+  
+  {
+    title: "The Digital Revolution",
+    header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
+    icon: <IconFileBroken className="h-5 w-5 text-white" />,
+  },
+  
+  
+  
+  
 ];
 
 export default BentoGridDemo;
