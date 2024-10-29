@@ -11,7 +11,19 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor:{
+        'login-left': '#121212',
+        'login-right': '#161616', 
+      },
+      colors:{
+        'login-color-left': '#E6E6E6',
+        'login-color-right': '#FFF',
+      },
+      fontFamily:{
+        'george':'George',
+      }
+    },
   },
   plugins: [addVariablesForColors],
   
