@@ -12,6 +12,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        hamlin: ['Hamlin', 'sans-serif'],
+      },
       backgroundColor:{
         'login-left': '#121212',
         'login-right': '#161616', 
