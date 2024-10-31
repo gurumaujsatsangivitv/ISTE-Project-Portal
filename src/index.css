@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,7 +20,6 @@
 
 a {
     font-weight: 500;
-    color: black;
     text-decoration: inherit;
 }
 
@@ -58,6 +59,9 @@ button {
     transition: border-color 0.25s;
 }
 
+button:hover {
+    border-color: none;
+}
     
     button:focus,
     button:focus-visible {
@@ -94,3 +98,27 @@ button {
   .login-shadow {
     box-shadow: 14px 16px 21px 0 rgba(0, 0, 0, 0.25);
   }
+.navbar-text {
+    font-family: 'Anton', sans-serif;
+  }
+  
+@font-face {
+  font-family: 'VanioTrial';
+  src: url('./assets/fonts/VanioTrial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'George';
+  src: url('./assets/fonts/George.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.font-VanioTrial {
+    font-family: 'VanioTrial', sans-serif;
+}
+
+.font-George {
+    font-family: 'George', serif; 
+}
