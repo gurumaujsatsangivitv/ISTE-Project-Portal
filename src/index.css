@@ -82,7 +82,7 @@ button:hover {
 }
 @font-face {
     font-family: 'Hamlin';
-    src: url('/src/fonts/Hamlin-Light.ttf') format('truetype');
+    src: url('/fonts/Hamlin-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -104,14 +104,14 @@ button:hover {
   
 @font-face {
   font-family: 'VanioTrial';
-  src: url('/src/fonts/VanioTrial.ttf') format('truetype');
+  src: url('/fonts/VanioTrial.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'George';
-  src: url('/src/fonts/George.ttf') format('truetype');
+  src: url('/fonts/George.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
