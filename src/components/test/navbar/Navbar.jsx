@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../../assets/logo.png";
-import loginLogo from "../../../assets/loginlogo.svg";
+import loginLogo from "../../../assets/loginLogo.svg";
 import Links from "./links/Links";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
