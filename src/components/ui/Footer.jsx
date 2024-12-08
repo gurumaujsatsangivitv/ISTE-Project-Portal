@@ -7,14 +7,14 @@ import React from 'react';
 const Footer = () => {
   return (
     <>
-      <footer className="bg-black text-white py-8 w-full">
-        <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+      <footer className="bg-black text-white py-8 w-screen">
+        <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-left">
           <div className="text-left mb-6 md:mb-0">
             <p>VIT University<br />
               Vellore, Tamil Nadu<br />
               India - 632014</p>
-            <div className=" w-screen text-white text-3xl pr-4">
-              <div className="flex justify-end space-x-5">
+            <div className=" w-screen text-white text-3xl ">
+              <div className="flex justify-end space-x-5 pr-14">
                 <a href="https://www.instagram.com/iste_vit_vellore/" target="_blank" className="text-white hover:text-white"><AiFillInstagram /></a>
                 <a href="https://x.com/iste_vitvellore" target="_blank" className="text-white hover:text-white"><FaXTwitter /></a>
                 <a href="https://www.linkedin.com/company/indian-society-for-technical-education/mycompany/" target="_blank" className="text-white hover:text-white" ><FaLinkedin /></a>
@@ -36,7 +36,7 @@ const Footer = () => {
            </div>
              
             <div className="">
-            <p className="flex justify-between items-center space-x-7 pl-7 text-2xl">
+            <p className="flex justify-between items-left space-x-7 pl-7 text-2xl">
                 <div className="flex space-x-7">
                   <span>Projects</span>
                   <span>Events</span>

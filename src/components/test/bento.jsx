@@ -34,13 +34,14 @@ export function BentoGridDemo() {
 
   return (
     <div className="max-w-4xl mx-auto">
-<div className="sticky top-0 z-10 bg-white flex flex-col space-y-4 md:space-y-0 md:flex-row md:justify-between items-center mb-8 py-4">         <nav className="flex items-center space-x-8">
+<div className="sticky top-0 z-10 bg-white flex flex-col space-y-4 md:space-y-0 md:flex-row md:justify-between items-center mb-8 py-4">         
+  <nav className="flex items-center space-x-8">
           {filters.map((filter) => (
             <a
               key={filter}
               href="#"
               onClick={(e) => handleFilterClick(filter, e)}
-              className={`text-xl relative no-underline transition-all duration-200
+              className={`text-xl text-black   relative no-underline transition-all duration-200
                 ${activeFilter === filter 
                   ? "bg-blue-100 pb-1 border-b-2 border-blue-400" 
                   : "hover:border-b-2 hover:border-gray-200 pb-1"}`}
@@ -55,7 +56,7 @@ export function BentoGridDemo() {
             placeholder="Search"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="pl-10 text-black pr-4 py-2 w-full md:w-64 rounded-lg border border-transparent focus:border-b-2 and focus:border-black-500 placeholder-black bg-transparent"
+            className="pl-10 text-black pr-4 py-2 w-full md:w-64 rounded-lg border border-black focus:border-b-2 and focus:border-black-500 placeholder-black bg-transparent"
           />
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black h-5 w-5"  />
         </div>
@@ -159,7 +160,7 @@ const items = [
     title: "The Digital Revolution",
     header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
     icon: <IconBoltFilled className="h-5 w-5 text-white" />,
-    tags: ["Electrical"],
+    tags: ["AI"],
   },
   {
     title: "The Digital Revolution",
@@ -171,13 +172,13 @@ const items = [
     title: "The Digital Revolution",
     header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
     icon: <IconBoltFilled className="h-5 w-5 text-white" />,
-    tags: ["Electrical"],
+    tags: ["AI"],
   },
   {
     title: "The Digital Revolution",
     header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
     icon: <IconBoltFilled className="h-5 w-5 text-white" />,
-    tags: ["Electrical"],
+    tags: ["AI"],
   },
   {
     title: "The Digital Revolution",
@@ -213,7 +214,7 @@ const items = [
     title: "The Digital Revolution",
     header: <Skeleton color="bg-neutral-200 dark:bg-neutral-900" />,
     icon: <IconBoltFilled className="h-5 w-5 text-white" />,
-    tags: ["Electrical"],
+    tags: ["AI"],
   },
   {
     title: "The Digital Revolution",
