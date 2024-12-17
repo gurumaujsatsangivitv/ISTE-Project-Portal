@@ -33,7 +33,7 @@ export function BentoGridDemo() {
   });
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="w-full sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl mx-auto">
 <div className="sticky top-0 z-10 bg-white flex flex-col space-y-4 md:space-y-0 md:flex-row md:justify-between items-center mb-8 py-4">         
   <nav className="flex items-center space-x-8">
           {filters.map((filter) => (
