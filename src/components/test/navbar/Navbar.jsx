@@ -1,3 +1,4 @@
+// components/test/navbar/Navbar.jsx
 import React, { useEffect, useState } from "react";
 import logo from "../../../assets/logo.png";
 import loginLogo from "../../../assets/loginLogo.svg";
@@ -25,9 +26,9 @@ const Navbar = ({ setCurrentPage }) => {
 
   return (
     <div
-      className={`flex items-center justify-between text-3xl md:text-xl lg:text-3xl w-full fixed top-0 border-b-black border-b-4 p-2 md:p-4 z-30 ${
-        isScrolled || isOpen ? "bg-black" : "bg-white"
-      } ${isScrolled || isOpen ? "text-white" : "text-black"} navbar-text`}
+      className={`flex items-center justify-between w-full fixed top-0 border-b-black border-b-4 p-4 z-30 transition-colors duration-300 ${
+        isScrolled || isOpen ? "bg-black text-white" : "bg-white text-black"
+      } navbar-text`}
     >
       <div className="flex items-center">
         <a href="/" className="navbar-text">
@@ -35,29 +36,29 @@ const Navbar = ({ setCurrentPage }) => {
         </a>
         <a href="/" className="navbar-text">
           <div
-            className={`${isOpen || isScrolled ? "text-white" : "text-black"} text-2xl md:text-xl lg:text-3xl`}
+            className={`text-2xl md:text-xl lg:text-3xl transition-colors duration-300 ${
+              isOpen || isScrolled ? "text-white" : "text-black"
+            }`}
           >
             ISTE
           </div>
         </a>
       </div>
       <div id="menu" className="flex items-center">
-        <Links isOpen={isOpen} handleClick={handleClick} setCurrentPage={setCurrentPage} />
-        
+        <Links
+          isOpen={isOpen}
+          handleClick={handleClick}
+          setCurrentPage={setCurrentPage}
+        />
+
         {/* Login Logo with hover effect */}
         <div className="ml-4 group navbar-text">
-          <a href="/login" onClick={handleClick}>
+          <a href="/login" onClick={handleClick} className="flex items-center">
             <img src={loginLogo} alt="Login" className="w-8 h-8" />
           </a>
-          <style jsx>{`
-            .group:hover {
-              background-color: black;
-              border-radius: 50%; /* Optional: round corners for the hover area */
-              padding: 8px; /* Optional: add some padding around the SVG */
-            }
-          `}</style>
         </div>
 
+        {/* Hamburger Menu */}
         <div className="md:hidden flex items-center ml-4 navbar-text">
           {!isOpen && (
             <button onClick={() => setIsOpen(true)}>
