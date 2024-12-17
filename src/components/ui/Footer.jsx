@@ -7,8 +7,8 @@ import React from 'react';
 const Footer = () => {
   return (
     <>
-      <footer className="bg-black text-white py-8 w-full">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-start">
+      <footer className="bg-black text-white py-8 w-screen">
+        <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-left">
           <div className="text-left mb-6 md:mb-0">
             <p>VIT University<br />
               Vellore, Tamil Nadu<br />
