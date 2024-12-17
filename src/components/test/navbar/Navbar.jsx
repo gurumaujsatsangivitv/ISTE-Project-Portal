@@ -25,9 +25,9 @@ const Navbar = ({ setCurrentPage }) => {
 
   return (
     <div
-      className={`flex items-center justify-between text-3xl md:text-xl lg:text-3xl w-full fixed top-0 border-b-black border-b-4 p-2 md:p-4 z-30 ${
+      className={`flex items-center justify-between text-3xl md:text-xl lg:text-3xl w-screen fixed top-0 border-b-black border-b-4 p-2 md:p-4 z-30 ${
         isScrolled || isOpen ? "bg-black" : "bg-white"
-      } ${isScrolled || isOpen ? "text-white" : "text-black"} navbar-text`}
+      } ${isScrolled || isOpen ? "text-white" : "text-black"} navbar-text overflow-x-hidden`}
     >
       <div className="flex items-center">
         <a href="/" className="navbar-text">
@@ -47,7 +47,9 @@ const Navbar = ({ setCurrentPage }) => {
         {/* Login Logo with hover effect */}
         <div className="ml-4 group navbar-text">
           <a href="/login" onClick={handleClick}>
+            <div className="bg-black p-2 md:mr-6 rounded-md flex items-center justify-center">
             <img src={loginLogo} alt="Login" className="w-8 h-8" />
+              </div>
           </a>
           <style jsx>{`
             .group:hover {
