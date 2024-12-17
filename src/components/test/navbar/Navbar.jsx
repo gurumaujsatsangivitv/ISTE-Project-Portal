@@ -51,13 +51,6 @@ const Navbar = ({ setCurrentPage }) => {
             <img src={loginLogo} alt="Login" className="w-8 h-8" />
               </div>
           </a>
-          <style jsx>{`
-            .group:hover {
-              background-color: black;
-              border-radius: 50%; /* Optional: round corners for the hover area */
-              padding: 8px; /* Optional: add some padding around the SVG */
-            }
-          `}</style>
         </div>
 
         <div className="md:hidden flex items-center ml-4 navbar-text">
